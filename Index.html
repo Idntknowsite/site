@@ -3,96 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de João Silva - Desenvolvedor Web">
-    <title>Portfólio de Francisco Garcia</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Página sobre Desenvolvimento Web e suas Funções">
+    <title>Desenvolvimento Web</title>
     <style>
         body {
-            font-family: Times New Roman, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
+            background-color: #f4f4f9;
         }
         header {
             background-color: #007BFF;
-            color: Grey;
-            padding: 20px;
+            color: white;
+            padding: 15px 0;
             text-align: center;
         }
         header h1 {
             margin: 0;
         }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            float: left;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
         .container {
             padding: 20px;
         }
-        .about, .projects, .contact {
-            margin-bottom: 40px;
-        }
-        .projects .project {
-            background-color: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .contact a {
+        .section-title {
             color: #007BFF;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Francisco Garcia</h1>
-    <p>Desenvolvedor Web | Criador de Soluções Inovadoras</p>
+    <h1>Bem-vindo ao Mundo do Desenvolvimento Web</h1>
 </header>
+
+<nav>
+    <a href="#introducao">Introdução</a>
+    <a href="#funcionalidades">Funcionalidades</a>
+    <a href="#sobre">Sobre</a>
+</nav>
 
 <div class="container">
 
-    <!-- Sobre -->
-    <section class="about">
-        <h2>Sobre Mim</h2>
-        <p>Olá! Sou Francisco Garcia, um desenvolvedor web apaixonado por tecnologia e soluções criativas. Tenho experiência em HTML, CSS, JavaScript e Python. Adoro criar interfaces intuitivas e eficientes, e sempre busco me aprimorar para entregar a melhor experiência ao usuário.</p>
+    <!-- Seção de Introdução -->
+    <section id="introducao" class="content">
+        <h2 class="section-title">O que é Desenvolvimento Web?</h2>
+        <p>O desenvolvimento web envolve a construção e manutenção de sites e aplicações para a internet. Ele abrange desde a criação de páginas simples em HTML até complexas aplicações dinâmicas que envolvem servidores e bancos de dados.</p>
+        <p>Existem várias etapas e tecnologias envolvidas, como o uso de HTML, CSS, JavaScript e frameworks como React, Angular e Node.js. Um desenvolvedor web cria a estrutura de um site, a parte visual e a funcionalidade que permite aos usuários interagir com o conteúdo de forma eficiente e agradável.</p>
     </section>
 
-    <!-- Projetos -->
-    <section class="projects">
-        <h2>Meus Projetos</h2>
-        <div class="project">
-            <h3>Projeto 1: Site Responsivo</h3>
-            <p>Este projeto é um site totalmente responsivo, criado com HTML5 e CSS3, que se adapta perfeitamente a diferentes dispositivos. O objetivo é garantir uma boa experiência de navegação em desktops, tablets e smartphones.</p>
-            <a href="#">Ver Projeto</a>
-        </div>
-        <div class="project">
-            <h3>Projeto 2: Aplicação de To-Do List</h3>
-            <p>Este projeto foi desenvolvido com JavaScript e permite ao usuário criar, editar e excluir tarefas em uma lista. O foco é em funcionalidade simples e design limpo e moderno.</p>
-            <a href="#">Ver Projeto</a>
-        </div>
-        <div class="project">
-            <h3>Projeto 3: Blog Pessoal</h3>
-            <p>Um blog simples feito em Python com o framework Flask. Ele permite aos usuários criar postagens, visualizá-las e comentar nas publicações. Focado na criação de um backend leve e fácil de usar.</p>
-            <a href="#">Ver Projeto</a>
-        </div>
+    <!-- Seção de Funcionalidades -->
+    <section id="funcionalidades" class="content">
+        <h2 class="section-title">Funcionalidades de um Website</h2>
+        <p>Além de criar a estrutura e o design, os desenvolvedores web também implementam várias funcionalidades que tornam os sites interativos e dinâmicos. Algumas dessas funcionalidades incluem:</p>
+        <ul>
+            <li><strong>Formulários Interativos:</strong> Permitem que os usuários se inscrevam, enviem feedback ou realizem login em um site.</li>
+            <li><strong>Integração com Redes Sociais:</strong> Facilita o compartilhamento de conteúdo e a autenticação de usuários através de plataformas como Facebook, Google e Twitter.</li>
+            <li><strong>Responsividade:</strong> Sites que se ajustam automaticamente a diferentes tamanhos de tela, como smartphones, tablets e desktops.</li>
+        </ul>
+        <p>Essas funcionalidades tornam a experiência do usuário mais rica e eficaz. Além disso, o backend do site, que envolve servidores e bancos de dados, é fundamental para o funcionamento de muitas dessas funções.</p>
     </section>
 
-    <!-- Contato -->
-    <section class="contact">
-        <h2>Contato</h2>
-        <p>Se você gostaria de entrar em contato comigo, pode me enviar um e-mail ou me encontrar nas redes sociais:</p>
-        <p>Email: <a href="mailto:francisco.garcia@email.com">franscisco.garcia@email.com</a></p>
-        <p>GitHub: <a href="https://github.com/franciscogarcia" target="_blank">github.com/franciscogarcia</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/franciscogarcia" target="_blank">linkedin.com/in/franciscogarcia</a></p>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="content">
+        <h2 class="section-title">Sobre o Desenvolvimento Web</h2>
+        <p>O desenvolvimento web é um campo em constante evolução. Novas tecnologias e técnicas estão sempre surgindo, o que torna o trabalho de um desenvolvedor web desafiador e empolgante. A criação de websites modernos exige não só habilidades técnicas, mas também criatividade e um bom entendimento das necessidades dos usuários.</p>
+        <p>Se você está interessado em aprender mais sobre desenvolvimento web, há uma abundância de recursos online gratuitos e pagos, incluindo tutoriais, cursos e documentação de ferramentas populares.</p>
+        <a href="https://www.w3schools.com/" target="_blank" class="button">Aprenda mais sobre Desenvolvimento Web</a>
     </section>
 
 </div>
@@ -100,3 +115,7 @@
 <footer>
     <p>&copy; 2025 Francisco Garcia. Todos os direitos reservados.</p>
 </footer>
+
+</body>
+</html>
+
